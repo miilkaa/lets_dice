@@ -1,5 +1,8 @@
 import PySimpleGUI as sg
-from funcs import dice
+import random
+
+def dice(dice_type: int):
+    return random.randint(1, dice_type)
 
 dices_img = ['./images/d20.png', './images/d12.png', './images/d10.png', 
              './images/d8.png', './images/d6.png', './images/d4.png']
